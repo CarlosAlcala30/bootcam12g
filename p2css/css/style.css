@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap%22");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
+}
 body{
     background-color:  hsl(233, 47%, 7%);
     display: flex;
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    box-sizing: border-box;
+    
 }
 
 .text-purple{
@@ -32,6 +37,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .flex-section{
@@ -40,24 +46,33 @@ body{
     justify-content: center;
     text-align: left;
     background-color: hsl(244, 38%, 16%);
-    height: 50vh;
-    width: 30vw;
+    height: 70vh;
+    width: 40vw;
     
 }
 
 
 .flex-div-row{
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-img {
-    padding-top: 5px;
-    box-sizing: border-box;
-    max-width: 120%;
-    max-height: 101%;
-    filter: contrast();
+img {  
+    width: 40vw;
+    height: 70vh;
+    filter: invert(0.3) sepia(1) hue-rotate(220deg) saturate(190%) brightness(0.50) contrast(180%);
+
+}
+
+
+
+.p-5{
+    padding: 2rem;
+}
+.border-radius{
+    border-radius: 5% 0 0 5%;
 }
 
 
