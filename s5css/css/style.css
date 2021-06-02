@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin:10px;
+    box-sizing: border-box;
+}
+
+.flex-wrapper{
+    display: flex;
+    border: solid 1px red;
+}
+
+.item{
+    width: 20px;
+    height: 20px;
+}
+
+.item1{
+    background-color: black;
+
+}
+
+.item2{
+    background-color: brown;
+}
+
+.item3{
+    background-color: cyan;
+}
+
+.flex-justify-start{
+    justify-content: flex-start;
+}
+
+.flex-justify-end{
+    justify-content: flex-end;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-justify-around{
+    justify-content: space-around;
+}
+
+.flex-justify-between{
+    justify-content: space-between;
+}
+
+.flex-justify-evenly{
+    justify-content: space-evenly;
+}
+
+.flex-align-start{
+    align-items: flex-start;
+}
+
+.flex-align-start{
+    align-items: flex-start;
+}
+
+.flex-align-end{
+    align-items: flex-end;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-align-stretch{
+    align-items:stretch;
+}
+
+.flex-align-baseline{
+    align-items:baseline;
+}
