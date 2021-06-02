@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cuadro{
+    width: 50vw;
+    height: 50vh;
+    border: solid 2px black;
+    margin: 0 auto;
+    margin-top: 25vh;
+    position: relative;
+}
+
+.reloj{
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    border-radius: 100%;
+    position: absolute;
+    right: calc(25vw - 75px);
+    bottom: 20px;
+}
+
+.manecilla-grande{
+    border: solid 1px blue;
+    height: 75px;
+    width: 2px;
+    position: relative;
+    left: 74.5px;
+}
+
+.manecilla-pequeña{
+    border: solid 1px blue;
+    height: 60px;
+    width: 2px;
+    position: absolute;
+    left: 74.5px;
+    top: 15px;
+}
+
+.centro{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 72.5px;
+    left: 72.5px;
+}
+
+
+@keyframes doce-Grande{     
+   
+    to{
+        transform: rotate(270deg);
+        transform-origin: left bottom;
+    }
+}
+
+@keyframes doce-Pequeña{     
+   
+    to{
+        transform: rotate(337.5deg);
+        transform-origin: left bottom;
+    }
+}
+
+form input#doce:checked ~ .reloj .manecilla-grande{
+    animation: doce-Grande 3s 1 linear;
+}
+
+form input#doce:checked ~ .reloj .manecilla-pequeña{
+    animation: doce-Pequeña 3s 1 linear;
+}
+
+@keyframes tres-Grande{     
+   0%{
+    transform: rotate(0deg);
+    transform-origin: bottom;
+   }
+    100%{
+        transform: rotate(180deg);
+        transform-origin: bottom;
+    }
+}
+
+@keyframes tres-Pequeña{     
+   
+    to{
+        transform: rotate(75deg);
+        transform-origin: bottom;
+    }
+}
+
+form input#tres:checked ~ .reloj .manecilla-grande{
+    animation: tres-Grande 3s 1 linear;
+}
+
+form input#tres:checked ~ .reloj .manecilla-pequeña{
+    animation: tres-Pequeña 3s 1 linear;
+}
+
+@keyframes seis-Grande{     
+    0%{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: rotate(60deg);
+        transform-origin: bottom;
+    }
+}
+
+@keyframes seis-Pequeña{     
+   0%{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+   }
+    100%{
+        transform: rotate(185deg);
+        transform-origin: bottom;
+    }
+}
+
+form input#seis:checked ~ .reloj .manecilla-grande{
+    animation: seis-Grande 3s 1 linear;
+}
+
+form input#seis:checked ~ .reloj .manecilla-pequeña{
+    animation: seis-Pequeña 3s 1 linear;
+}

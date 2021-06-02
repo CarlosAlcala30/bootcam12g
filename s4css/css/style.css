@@ -1,0 +1,63 @@
+#list li:first-child{
+    color: blueviolet;
+}
+
+#list li:last-child{
+    color: red;
+}
+
+#list li:nth-child(4){
+    color: blue;
+}
+
+#list li:nth-child(odd){
+    font-family: 'Courier New', Courier, monospace;
+    background-color: seagreen;
+}
+
+#list li:nth-child(even){
+    font-family: 'Times New Roman', Times, serif;
+    background-color: seashell;
+}
+/*selector de elementos subsecuentes*/
+#another-list .active ~ li{
+    color: lightcoral;
+}
+
+/*selector de elemento adyacente*/
+#another-list .active + li{
+    color: crimson;
+}
+
+/*decendiente directo*/
+.first-element > p{
+    background-color: darkgoldenrod;
+}
+
+
+.radio-button input[type="radio"]:checked ~ div{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.square{    
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    opacity: 0;
+}
+
+.rectangule{
+    height: 20px;
+    width: 40px;
+    background-color: blue;
+    opacity: 0;
+}
+
+.circle{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 100%;
+    opacity: 0;
+}
