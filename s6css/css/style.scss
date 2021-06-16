@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: hsl(0, 0%, 95%);
+        section{                             
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: stretch;
+            padding: 1rem;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                color: hsl(0, 0%, 95%);
+                font-family: 'Big Shoulders Display', cursive;
+                padding: 1rem;
+                &.div1{
+                    border-radius: 1rem 1rem 0 0;
+                    background-color: hsl(31, 77%, 52%);
+                    div a{
+                        color: hsl(31, 77%, 52%);
+                    }
+                }
+                &.div2{
+                    background-color: hsl(184, 100%, 22%);
+                    div a{
+                        color: hsl(184, 100%, 22%);
+                    }
+                }
+                &.div3{                  
+                    background-color: hsl(179, 100%, 13%);
+                    border-radius: 0 0 1rem 1rem;
+                    div a{
+                        color: hsl(179, 100%, 13%);
+                    }
+                }
+
+                img{
+                    width: 50px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    margin-bottom: 10px;
+                }
+                p{
+                    color:  hsla(0, 0%, 100%, 0.75);
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-size: 10px;
+                    margin-bottom: 5px;
+                }               
+
+                div a{
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-size: 10px;
+                    text-decoration: none;
+                    background-color: hsl(0, 0%, 95%);
+                    border-radius: 5rem;
+                    text-align: center;
+                    padding: 5px;
+                    width: 80px;
+                    height: 25px;
+                    a:hover{
+                        color: hsla(0, 0%, 100%, 0.75);
+                        border-radius: solid 1px white;
+                        background-color: transparent;
+                    }
+                }
+                
+            }
+            
+        }  
+    
+}
+
+ /*Desktop screen size*/
+ @media only screen and (min-width:376px){      
+        main{        
+            section{            
+                width: 80vw;
+                height: 50vh;
+                flex-direction: row;               
+                div{
+                    align-items: center;
+                    &.div1{
+                        border-radius: 1rem 0 0 1rem;
+                    }
+                    &.div3{
+                        border-radius: 0 1rem 1rem 0;
+                    }
+                }
+                
+            }
+        }
+       
+}

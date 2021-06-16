@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 1rem;
+}
+
+main section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+  padding: 1rem;
+}
+
+main section div.div1 {
+  border-radius: 1rem 1rem 0 0;
+  background-color: #e38826;
+}
+
+main section div.div1 div a {
+  color: #e38826;
+}
+
+main section div.div2 {
+  background-color: #006970;
+}
+
+main section div.div2 div a {
+  color: #006970;
+}
+
+main section div.div3 {
+  background-color: #004241;
+  border-radius: 0 0 1rem 1rem;
+}
+
+main section div.div3 div a {
+  color: #004241;
+}
+
+main section div img {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+main section div h1 {
+  margin-bottom: 10px;
+}
+
+main section div p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+main section div div a {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-radius: 5rem;
+  text-align: center;
+  padding: 5px;
+  width: 80px;
+  height: 25px;
+}
+
+main section div div a a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: solid 1px white;
+  background-color: transparent;
+}
+
+/*Desktop screen size*/
+@media only screen and (min-width: 376px) {
+  main section {
+    width: 80vw;
+    height: 50vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main section div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section div.div1 {
+    border-radius: 1rem 0 0 1rem;
+  }
+  main section div.div3 {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

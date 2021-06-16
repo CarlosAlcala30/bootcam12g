@@ -1,0 +1,65 @@
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.element-1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+.element-2{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 10px;
+}
+
+.element-3{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 10px;
+}
+
+/*Iphone screen size*/
+@media only screen and (min-width:576px){
+    body{
+        flex-direction: column;        
+        justify-content: space-evenly;
+    }
+}
+
+/*Tablet screen size*/
+@media only screen and (min-width:768px){
+    body{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+}
+
+/*Desktop screen size*/
+@media only screen and (min-width:992px){
+    body{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .element-1{
+        height: unset;        
+    }
+    
+    .element-2{
+        height: unset;
+    }
+    
+    .element-3{
+        height: unset;
+    }
+
+}

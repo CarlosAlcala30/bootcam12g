@@ -1,0 +1,78 @@
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+
+$Font-size: 13px;
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+
+.width-starts{
+    width: 30px;
+}
+
+.height50{
+    
+    height: 50px;
+}
+
+.redondear-borde{
+    border-radius: 1rem;
+}
+
+
+
+.font-size{
+    font-size: $Font-size;
+}
+
+.bg-violet{
+    background-color: $Moderate-violet;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-gray{
+    
+    background-color: lighten(black,95%);
+    border-radius: 1rem;
+}
+
+.bg-grayish-blue{
+    background-color: $Light-grayish-blue;
+}
+
+.bg-dark-grayish-blue{
+    background-color: $Very-dark-grayish-blue;
+}
+
+
+
+.bg-img{
+    background-size: 60%;
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+    background-repeat: no-repeat, repeat;
+}
+
+.bg-img-bottom-right{
+    background-size: 80%;
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+    background-repeat: no-repeat, repeat;
+    z-index: 0;
+}
+
+.color-text-purple{
+    color: purple;
+}
+
+.color-text-light-gray{
+    color: $Light-gray;
+}
+
+
