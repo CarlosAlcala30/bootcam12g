@@ -1,0 +1,12 @@
+<[
+    {
+        "member_type":"USER",
+        "user_id":"603",
+        "profile_id":"1"
+    },
+    {
+        "member_type":"USER",
+        "user_id":"603",
+        "profile_id":"2"
+    }
+],[Content-Type:"application/json", Connection:"keep-alive", Accept:"*/*", Cookie:"bonita.tenant=1; Path=/bonita;", "BOS_locale=es; Path=/", "JSESSIONID=EFF69438EF11FA82D838D88718C1433E; Path=/; HttpOnly;", "X-Bonita-API-Token=94055855-dcc9-45ea-81b5-e09208c3434a; Path=/", X-Bonita-API-Token:"94055855-dcc9-45ea-81b5-e09208c3434a"]>
