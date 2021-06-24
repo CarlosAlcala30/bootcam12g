@@ -243,7 +243,27 @@ let songsOfBands = arrayBands => {
   saber cuál es la canción con más likes
   ( nombre de la canción y nombre de la banda)
   */
- 
+ let moreStatistics = (arrayList,param) => {
+     let moreLikes = 0;
+     let indexMore = 0;
+     arrayList.forEach((item,index)=>{
+         let totalparam = item.statistics[param];
+         if(totalparam >moreLikes){
+            moreLikes = totalparam;
+            indexMore = index;
+         }
+     });
+
+     let nameBand = arrayList[indexMore].band;
+     let nameSong = arrayList[indexMore].name;
+     //"\n" es un salto de linea
+     let label = "song with more "+param+" is\nsong: "+nameSong+"\nband: "+nameBand;
+     console.log(label);
+     return label;
+ }
+
+ moreStatistics(songsData,"likes");
+ moreStatistics(songsData,"reproductions");
 
 /*saber cuál es la canción con más reproducciones
 ( nombre de la canción y nombre de la banda)
